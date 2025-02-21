@@ -25,6 +25,10 @@ Para a execução correta é necessário a instalação das bibliotecas a seguir
     pip install sqlalchemy
 ```
 
+```python
+    pip install imblearn
+```
+
 ## Estrutura do Banco de Dados  
 
 ### Models (Modelos de ML)  

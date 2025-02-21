@@ -1,0 +1,65 @@
+
+    <html>
+    <head>
+        <title>Relatório de Modelos</title>
+        
+    <style>
+        body { font-family: Arial, sans-serif; margin: 40px; padding: 20px; background-color: #f4f4f4; }
+        h1 { text-align: center; color: #333; }
+        h2 { border-bottom: 2px solid #2F4156; padding-bottom: 5px; color: #2F4156; }
+        .container { max-width: 900px; margin: auto; background: white; padding: 20px; border-radius: 8px; box-shadow: 0px 0px 10px rgba(0,0,0,0.1); }
+        table { width: 100%; border-collapse: collapse; margin-top: 10px; }
+        th, td { padding: 10px; border: 1px solid #ddd; text-align: left; }
+        th { background-color: #2F4156; color: white; }
+        .hyperparams { font-style: italic; color: #555; }
+        hr { border: 0; height: 1px; background: #ddd; margin: 20px 0; }
+    </style>
+    
+    </head>
+    <body>
+        <div class='container'>
+            <h1>Relatório de Modelos</h1>
+    <h2>Dataset: breast_cancer</h2>
+                <h3>Modelo: LogisticRegression</h3>
+                <p><strong>Tipo:</strong> Classificação</p>
+            <h4>Hiperparâmetros:</h4><ul><li>C = 0.1</li><li>solver = liblinear</li></ul><h4>Estratégias de Aprendizado:</h4><ul><li>Scaling - None - Cross-Validation - [7, 0, 0]</li></ul><h4>Métricas:</h4><ul><li>accuracy = 0.975395</li><li>precision = 0.975402</li><li>recall = 0.975395</li><li>f1_score = 0.975347</li><li>auc_roc = 0.994345</li></ul><hr>
+                <h3>Modelo: GaussianNB</h3>
+                <p><strong>Tipo:</strong> Classificação</p>
+            <h4>Estratégias de Aprendizado:</h4><ul><li>Scaling, Feature Selection - None - Cross-Validation - [5, 0, 0]</li></ul><h4>Métricas:</h4><ul><li>accuracy = 0.943761</li><li>precision = 0.943761</li><li>recall = 0.943761</li><li>f1_score = 0.943761</li><li>auc_roc = 0.982255</li></ul><hr>
+                <h3>Modelo: GaussianNB</h3>
+                <p><strong>Tipo:</strong> Classificação</p>
+            <h4>Estratégias de Aprendizado:</h4><ul><li>Scaling, Sampling - None - Cross-Validation - [5, 0, 0]</li></ul><h4>Métricas:</h4><ul><li>accuracy = 0.927171</li><li>precision = 0.92911</li><li>recall = 0.927171</li><li>f1_score = 0.927088</li><li>auc_roc = 0.987815</li></ul><hr><h2>Dataset: california</h2>
+                <h3>Modelo: XGBoost</h3>
+                <p><strong>Tipo:</strong> Regressão</p>
+            <h4>Hiperparâmetros:</h4><ul><li>n_estimators = 50</li><li>max_depth = 3</li><li>learning_rate = 0.05</li></ul><h4>Estratégias de Aprendizado:</h4><ul><li>Scaling - None - Hold-out - [0.7, 0.20998062015503877, 0.09001937984496124]</li></ul><h4>Métricas:</h4><ul><li>mse = 0.434417</li><li>rmse = 0.659103</li><li>mae = 0.488687</li><li>r2 = 0.66284</li></ul><hr>
+                <h3>Modelo: RandomForest</h3>
+                <p><strong>Tipo:</strong> Regressão</p>
+            <h4>Hiperparâmetros:</h4><ul><li>n_estimators = 75</li><li>max_depth = 4</li></ul><h4>Estratégias de Aprendizado:</h4><ul><li>Feature Selection - None - Hold-out - [0.7, 0.3, 0]</li></ul><h4>Métricas:</h4><ul><li>mse = 0.516401</li><li>rmse = 0.718611</li><li>mae = 0.531847</li><li>r2 = 0.606563</li></ul><hr>
+                <h3>Modelo: Lasso</h3>
+                <p><strong>Tipo:</strong> Regressão</p>
+            <h4>Hiperparâmetros:</h4><ul><li>alpha = 0.5</li></ul><h4>Estratégias de Aprendizado:</h4><ul><li>Feature Selection - None - Cross-Validation - [5, 0, 0]</li></ul><h4>Métricas:</h4><ul><li>mse = 0.952078</li><li>rmse = 0.975745</li><li>mae = 0.767992</li><li>r2 = 0.284986</li></ul><hr>
+                <h3>Modelo: Lasso</h3>
+                <p><strong>Tipo:</strong> Regressão</p>
+            <h4>Hiperparâmetros:</h4><ul><li>alpha = 0.5</li></ul><h4>Estratégias de Aprendizado:</h4><ul><li>Scaling - None - Cross-Validation - [5, 0, 0]</li></ul><h4>Métricas:</h4><ul><li>mse = 1.33169</li><li>rmse = 1.15399</li><li>mae = 0.911758</li><li>r2 = -0.000102842</li></ul><hr><h2>Dataset: diabetes</h2>
+                <h3>Modelo: LinearRegression</h3>
+                <p><strong>Tipo:</strong> Regressão</p>
+            <h4>Hiperparâmetros:</h4><ul><li>fit_intercept = True</li></ul><h4>Estratégias de Aprendizado:</h4><ul><li>Scaling - None - Hold-out - [0.7986425339366516, 0.2013574660633484, 0]</li></ul><h4>Métricas:</h4><ul><li>mse = 2900.19</li><li>rmse = 53.8534</li><li>mae = 42.7941</li><li>r2 = 0.452603</li></ul><hr>
+                <h3>Modelo: DecisionTree</h3>
+                <p><strong>Tipo:</strong> Regressão</p>
+            <h4>Hiperparâmetros:</h4><ul><li>max_depth = 3</li><li>min_samples_split = 5</li></ul><h4>Estratégias de Aprendizado:</h4><ul><li>Feature Selection - None - Hold-out - [0.7986425339366516, 0.16063348416289594, 0.04072398190045249]</li></ul><h4>Métricas:</h4><ul><li>mse = 3622.81</li><li>rmse = 60.1898</li><li>mae = 48.6999</li><li>r2 = 0.362642</li></ul><hr>
+                <h3>Modelo: Ridge</h3>
+                <p><strong>Tipo:</strong> Regressão</p>
+            <h4>Hiperparâmetros:</h4><ul><li>alpha = 1.0</li></ul><h4>Estratégias de Aprendizado:</h4><ul><li>Scaling - None - Cross-Validation - [10, 0, 0]</li></ul><h4>Métricas:</h4><ul><li>mse = 3020.86</li><li>rmse = 54.9624</li><li>mae = 44.4578</li><li>r2 = 0.49057</li></ul><hr><h2>Dataset: iris</h2>
+                <h3>Modelo: Random Forest</h3>
+                <p><strong>Tipo:</strong> Classificação</p>
+            <h4>Hiperparâmetros:</h4><ul><li>n_estimators = 50</li><li>max_depth = 4</li></ul><h4>Estratégias de Aprendizado:</h4><ul><li>Scaling - None - Hold-out - [0.8, 0.2, 0]</li></ul><h4>Métricas:</h4><ul><li>accuracy = 1.0</li><li>precision = 1.0</li><li>recall = 1.0</li><li>f1_score = 1.0</li><li>auc_roc = 1.0</li></ul><hr>
+                <h3>Modelo: SVM</h3>
+                <p><strong>Tipo:</strong> Classificação</p>
+            <h4>Hiperparâmetros:</h4><ul><li>C = 1.0</li><li>kernel = rbf</li></ul><h4>Estratégias de Aprendizado:</h4><ul><li>Scaling - None - Hold-out - [0.7, 0.3, 0]</li></ul><h4>Métricas:</h4><ul><li>accuracy = 1.0</li><li>precision = 1.0</li><li>recall = 1.0</li><li>f1_score = 1.0</li><li>auc_roc = 1.0</li></ul><hr>
+                <h3>Modelo: KNeighbors</h3>
+                <p><strong>Tipo:</strong> Classificação</p>
+            <h4>Hiperparâmetros:</h4><ul><li>n_neighbors = 3</li></ul><h4>Estratégias de Aprendizado:</h4><ul><li>Scaling - None - Hold-out - [0.7, 0.3, 0]</li></ul><h4>Métricas:</h4><ul><li>accuracy = 1.0</li><li>precision = 1.0</li><li>recall = 1.0</li><li>f1_score = 1.0</li><li>auc_roc = 1.0</li></ul><hr>
+        </div>
+    </body>
+    </html>
+    
