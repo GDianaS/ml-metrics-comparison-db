@@ -2,6 +2,29 @@
 
 **OBJETIVO :** Desenvolver um sistema para experimentação e comparação de modelos de Machine Learning (ML) que armazene os modelos, hiperparâmetros, estratégias de pré-processamento e métricas de desempenho em um banco de dados. O sistema permitirá o recalculo e geração de relatórios comparativos de desempenho dos modelos treinados.
 
+## Preparação do Ambiente
+
+### Ambiente Virtual
+Criação:
+```python
+    python -m venv ven
+```
+Ativação:
+```python
+    venv\Scripts\Activate
+```
+
+### Instalação das bibliotecas 
+Para a execução correta é necessário a instalação das bibliotecas a seguir:
+
+```python
+    pip install numpy pandas scikit-learn matplotblib seaborn
+```
+
+```python
+    pip install sqlalchemy
+```
+
 ## Estrutura do Banco de Dados  
 
 ### Models (Modelos de ML)  
